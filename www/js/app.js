@@ -20,7 +20,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     url: '/tab',
     abstract: true,
     templateUrl: 'templates/tabs.html'
-  });
+  })
 
-  $urlRouterProvider.otherwise('/tab/dash');
+  .state('tab.home', {
+     url: '/home',
+     views: {
+       'tab-home': {
+         templateUrl: 'templates/home/home.html',
+         controller: 'HomeController'
+       }
+     }
+   })
+
+  $urlRouterProvider.otherwise('/tab/home');
   });
