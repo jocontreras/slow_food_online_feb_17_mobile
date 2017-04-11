@@ -1,4 +1,5 @@
 angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', 'ngResource'])
+  .constant('API_URL', 'https://slowfood-online-feb-17.herokuapp.com/api/v1')
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {

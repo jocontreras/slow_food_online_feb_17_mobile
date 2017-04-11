@@ -1,6 +1,5 @@
 angular.module('starter.controllers', [])
 
-.controller('HomeController',  function($scope, SlowFood) {
-  $scope.restaurants = SlowFood.query();
-  //console.log($scope.restaurants)
+.controller('HomeController',  function($scope, Restaurant) {
+  $scope.restaurants = Restaurant.query();
 });
