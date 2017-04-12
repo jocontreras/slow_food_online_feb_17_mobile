@@ -1,10 +1,10 @@
 <ion-view>
- <ion-content>
-   <h1>{{restaurant.name}}</h1>
-   <p>{{restaurant.menu.name}}</p>
-   <div ng-repeat="dish in restaurant.menu.dishes">
-     <h4>{{dish.name}}</h4>
-     <p>{{dish.description}} {{dish.price}}</p>
-   </div>
- </ion-content>
+  <ion-content>
+    <h1>{{restaurant.name}}</h1>
+    <p>About us: {{restaurant.description}}</p>
+    <h3>Our Menus</h3>
+    <div class="item" ng-click="navigateToMenu(menu.id)">
+      <p>{{restaurant.menu.name}}</p>
+    </div>
+  </ion-content>
 </ion-view>

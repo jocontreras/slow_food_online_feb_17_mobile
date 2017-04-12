@@ -41,6 +41,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
          controller: 'RestaurantController'
        }
      }
+   })
+
+   .state('tab.menu', {
+     url: '/menu/:id',
+     views: {
+       'tab-home': {
+         templateUrl: 'templates/menus/menu.html',
+         controller: 'MenuController'
+       }
+     }
    });
 
   $urlRouterProvider.otherwise('/tab/home');
