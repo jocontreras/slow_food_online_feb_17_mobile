@@ -13,4 +13,5 @@ angular.module('starter.controllers', [])
 
 .controller('RestaurantController', function($scope, $stateParams, Restaurant){
   $scope.restaurant = Restaurant.get({id: $stateParams.id})
+  console.log($scope.restaurant)
 });
