@@ -17,7 +17,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
 
-    .state('tab', {
+  .state('tab', {
     url: '/tab',
     abstract: true,
     templateUrl: 'templates/tabs.html'
@@ -29,6 +29,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
        'tab-home': {
          templateUrl: 'templates/home/home.html',
          controller: 'HomeController'
+       }
+     }
+   })
+
+   .state('tab.restaurant', {
+     url: '/restaurant/:id',
+     views: {
+       'tab-home': {
+         templateUrl: 'templates/restaurants/restaurant.html',
+         controller: 'RestaurantController'
        }
      }
    });
