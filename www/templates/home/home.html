@@ -1,7 +1,7 @@
 <ion-view title="SloFo">
  <ion-content>
   <div class="col" ng-if="restaurants" ng-repeat="restaurant in restaurants">
-    <div class="item item-divider" ng-click="navigateToRestaurant(1)">
+    <div class="item item-divider" ng-click="navigateToRestaurant(restaurant.id)">
        {{restaurant.name}}
     </div>
   </div>
